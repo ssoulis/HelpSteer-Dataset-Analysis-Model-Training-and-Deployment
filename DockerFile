@@ -1,0 +1,18 @@
+# Use an official Python runtime as the base image
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR C:\Users\pipis\Desktop\project
+
+# Copy required files to the working directory
+COPY api.py C:\Users\pipis\Desktop\project
+COPY regression_model.pth C:\Users\pipis\Desktop\project
+
+# Install necessary Python dependencies
+RUN pip install flask torch transformers
+
+# Expose the port for the API
+EXPOSE 5000
+
+# Command to run the API
+CMD ["python", "api.py"]
