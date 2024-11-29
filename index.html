@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Complexity</title>
+    <script>
+        async function getPrediction() {
+            const prompt = document.getElementById("prompt").value;
+            const response = document.getElementById("response").value;
+
+            const data = { prompt, response };
+
+            const result = await fetch("/predict", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data),
+            });
+
+            const resultJson = await result.json();
+            document.getElementById("result").innerText =
+                resultJson.error || `Predicted Complexity: ${resultJson.complexity}`;
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px;">
+        <h1>Predict Complexity</h1>
+        <textarea id="prompt" rows="5" cols="40" placeholder="Enter prompt text here..."></textarea><br><br>
+        <textarea id="response" rows="5" cols="40" placeholder="Enter response text here..."></textarea><br><br>
+        <button onclick="getPrediction()">Predict</button>
+        <p id="result" style="margin-top: 20px; font-size: 18px; font-weight: bold;"></p>
+    </div>
+</body>
+</html>
