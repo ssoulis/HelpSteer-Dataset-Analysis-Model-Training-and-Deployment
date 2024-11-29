@@ -63,11 +63,11 @@ Prerequisites
   * Docker
 Steps to Run the Project:
 
-  1.Clone the repository:
+  1. Clone the repository:
 ```bash
 git clone https://github.com/your-username/HelpSteer-ML-Project.git
 ```
-  2.Navigate to the project directory
+  2. Navigate to the project directory
 ```bash
 cd HelpSteer-ML-Project
 ```
@@ -78,13 +78,16 @@ cd HelpSteer-ML-Project
 
 The API accepts 2 input in text format the prompt and the response
 
+
 ![alt text](https://github.com/ssoulis/HelpSteer-Dataset-Analysis-Model-Training-and-Deployment/blob/main/example1.png)
 
 If the prompt and response are not given then it displays error
 
+
 ![alt text](https://github.com/ssoulis/HelpSteer-Dataset-Analysis-Model-Training-and-Deployment/blob/main/example2.png)
 
 If prompt and response are given correctly the model calculates the complexity and displays it as a float.
+
 
 ![alt text](https://github.com/ssoulis/HelpSteer-Dataset-Analysis-Model-Training-and-Deployment/blob/main/example3.png)
 
