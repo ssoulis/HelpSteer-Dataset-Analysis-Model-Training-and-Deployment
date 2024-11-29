@@ -18,9 +18,9 @@ This project is designed to analyze the HelpSteer Dataset, build a regression mo
 ## Project Overview
 
 The project is divided into three milestones:
-  -Exploratory Data Analysis (EDA): Analyze the dataset to understand attribute correlations and data distribution.
-  -Regression Model Development: Train and evaluate a model to predict the "complexity" attribute using embedding techniques and evaluate performance.
-  -API and Deployment: Package the trained model into a RESTful API and deploy it using Docker for seamless interaction.
+  * Exploratory Data Analysis (EDA): Analyze the dataset to understand attribute correlations and data distribution.
+  * Regression Model Development: Train and evaluate a model to predict the "complexity" attribute using embedding techniques and evaluate performance.
+  * API and Deployment: Package the trained model into a RESTful API and deploy it using Docker for seamless interaction.
 
 ## Dataset
 
@@ -37,31 +37,32 @@ The HelpSteer Dataset, hosted on HuggingFace, provides textual data for analysis
 1. Exploratory Data Analysis (EDA)
   Objective: Understand dataset characteristics and explore relationships between attributes.
   Tasks:
-    -Load and preprocess the dataset.
-    -Perform correlation analysis and visualize results using a heatmap.
-    -Deliverable: Annotated Jupyter Notebook with insights and visualizations.
+    * Load and preprocess the dataset.
+    * Perform correlation analysis and visualize results using a heatmap.
+    * Deliverable: Annotated Jupyter Notebook with insights and visualizations.
 2. Regression Model Development
   Objective: Predict the complexity attribute of text responses.
   Tasks:
-    -Feature engineering using embedding techniques.
-    -Split data into training and testing sets.
-    -Train regression models and evaluate using RMSE and MAE.
-    -Deliverable: Jupyter Notebook with training and evaluation pipelines.
+    * Feature engineering using embedding techniques.
+    * Split data into training and testing sets.
+    * Train regression models and evaluate using RMSE and MAE.
+    * Deliverable: Jupyter Notebook with training and evaluation pipelines.
 3. API Development and Deployment
   Objective: Deploy the regression model for real-time predictions.
   Tasks:
-     -Develop a RESTful API for user interaction.
-     -Dockerize the API for easy deployment.
+     * Develop a RESTful API for user interaction.
+     * Dockerize the API for easy deployment.
   Deliverables:
-    -Dockerfile for building the container.
-    -API source code.
-    -Documentation with usage instructions.
+    * Dockerfile for building the container.
+    * API source code.
+    * Documentation with usage instructions.
 
 ## Installation 
 Prerequisites
   * Python 3.x
   * Docker
-Steps to Run the Project
+Steps to Run the Project:
+
   1.Clone the repository:
 ```bash
 git clone https://github.com/your-username/HelpSteer-ML-Project.git
